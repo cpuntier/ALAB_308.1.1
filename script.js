@@ -1,5 +1,5 @@
 // The initial numbers that must be verified.
-const n1 = 10;
+const n1 = 1;
 const n2 = 15;
 const n3 = 20;
 const n4 = 5;
@@ -8,6 +8,7 @@ const n4 = 5;
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
+
 
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
@@ -43,3 +44,14 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+
+
+const isDivisibleBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) == 0;
+
+console.log(isDivisibleBy5);
+
+
+const firstLargerThanLast = (n1 > n4);
+
+console.log(firstLargerThanLast);
