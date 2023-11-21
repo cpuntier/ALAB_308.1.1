@@ -55,3 +55,5 @@ console.log(isDivisibleBy5);
 const firstLargerThanLast = (n1 > n4);
 
 console.log(firstLargerThanLast);
+
+
