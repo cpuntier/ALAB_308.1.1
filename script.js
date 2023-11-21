@@ -1,7 +1,7 @@
 // The initial numbers that must be verified.
-const n1 = 1;
+const n1 = 12;
 const n2 = 15;
-const n3 = 20;
+const n3 = 16;
 const n4 = 5;
 
 // Check one: add up to 50
@@ -55,5 +55,9 @@ console.log(isDivisibleBy5);
 const firstLargerThanLast = (n1 > n4);
 
 console.log(firstLargerThanLast);
+
+const chain = ((n2-n1) * n3 ) % n4 ;
+
+console.log(chain)
 
 
