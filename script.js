@@ -67,8 +67,29 @@ const isUnder25 = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25; //can use this i
 
 // Road Trip Problems
 
+//Total Gallons Calculations
+const _55mph = 1500 / 30; //50 gallons
+const _60mph = 1500 / 28; //53.5714 gallons
+const _75mph = 1500 / 23; //65.2174 gallons 
 
-const _55mph = 1500 / 55;
-const _60mph = 1500 / 60;
-const _75mph = 1500 / 75;
+//Total Budget calculations
+const _55cost = _55mph * 3; //$150
+const _60cost = _60mph * 3; //$160.71
+const _75cost = _75mph * 3; //$195.61 
+
+//Length of Time Calculations
+const _55time = 1500/55; //27.27 hrs
+const _60time = 1500/60; //25 hrs
+const _75time = 1500/75; //20 hrs
+
+
+console.log(`Number of gallons when going 55mph on this trip is ${_55mph}, total cost for this trip is ${_55cost}, total time is ${_55time}`)
+console.log(`Number of gallons when going 60mph on this trip is ${_60mph}, total cost for this trip is ${_60cost}, total time is ${_60time}`)
+console.log(`Number of gallons when going 55mph on this trip is ${_75mph}, total cost for this trip is ${_75cost}, total time is ${_75time}`)
+
+/**
+ * Going 75 mph is over budget so this one makes no sense to do. I would say going 60mph makes most sense. You'll get there sooner at a slightly higher cost.
+ * Going 50mph is fine too if you want to save a little money
+ */
+
 
